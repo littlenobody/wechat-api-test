@@ -1,13 +1,7 @@
+server:
+  port: 8081
 spring:
-        cloud:
-                config:
-                        name: wechat
-                        lable: master
-                        discovery:
-                                enabled: true
-                                serviceId: wechat
-
-eureka:
-        client:
-                serviceUrl:
-                        defaultZone: http://localhost:8888/eureka/
+  application:
+    name: wechat
+  profiles:
+    active: dev
