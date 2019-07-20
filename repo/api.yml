@@ -1,0 +1,7 @@
+api:
+  property:
+    accesstoken: 23_CewwjhPtb258DQTGE0GQZrHVZ0zT4lJ9XbbYIBj76U4K1h451x0wMky741Z3tTf6pbyFnuY-TSiVMMeKruR1CBhDOuN7T0gy09057nOiEyLTO_Q1e07FlWr_OLq2vKy7nOHYSB4W8eSzFA00KILaAJAQOR
+    appID: wx31b4a90a892adfe5
+    appsecret: 1bbfa515a5ec8129527ef70e7e7ae38a
+  url:
+    sendmessage: https://api.weixin.qq.com/cgi-bin/message/custom/send?access_token=${api.property.accesstoken}
