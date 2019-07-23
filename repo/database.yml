@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    druid:
+      url: jdbc:mysql://localhost:3306/wechat?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+      username: root
+      password: Tx85190336
+      stat-view-servlet:
+        login-username: admin
+        login-password: admin
