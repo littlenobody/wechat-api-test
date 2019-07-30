@@ -5,3 +5,8 @@ spring:
     name: wechat
   profiles:
     active: dev
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh,health,info
