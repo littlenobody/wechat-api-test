@@ -19,3 +19,7 @@ ttsales:
        openIdHeaderName: X-OPENID
        openIdAttributeName: X-OPENID
        tokenCookieTtl: 1800000
+
+ auth:
+  duration: 1800000
+  wxAuthCallback: http://localhost:8082/ttsales-points-wx-auth/wx/callback/getWxAuthCode.do?toUrl={0}
