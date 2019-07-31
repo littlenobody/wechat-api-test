@@ -11,3 +11,11 @@ management:
     web:
       exposure:
         include: refresh,health,info,bus-refresh
+
+ttsales:
+  points:
+    pointsWxToken:
+       tokenCookieName: POINTS_WX_TOKEN
+       openIdHeaderName: X-OPENID
+       openIdAttributeName: X-OPENID
+       tokenCookieTtl: 1800000
