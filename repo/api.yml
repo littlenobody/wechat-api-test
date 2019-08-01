@@ -8,3 +8,43 @@ api:
     message: ${api.base-url}/message
     menu: ${api.base-url}/menu
     tags: ${api.base-url}/tags
+
+#微信接口地址和配置
+wx:
+  mp:
+    config:
+      accessTokenUrl: https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid={0}&secret={1}
+      allPrivateTemplateUrl: https://api.weixin.qq.com/cgi-bin/template/get_all_private_template?access_token={0}
+      sendTemplateMsgUrl: https://api.weixin.qq.com/cgi-bin/message/template/send?access_token={0}
+      #用户授权
+      authCodeUrl: https://open.weixin.qq.com/connect/oauth2/authorize?appid={0}&redirect_uri={1}&response_type=code&scope=snsapi_base&state=STATE#wechat_redirect
+      authAccessTokenUrl: https://api.weixin.qq.com/sns/oauth2/access_token?appid={0}&secret={1}&code={2}&grant_type=authorization_code
+      authUserInfoUrl: https://api.weixin.qq.com/sns/userinfo?access_token={0}&openid={1}&lang=zh_CN
+      userInfoUrl: https://api.weixin.qq.com/cgi-bin/user/info?access_token={0}&openid={1}&lang=zh_CN
+      #菜单相关
+      menuCreateUrl: https://api.weixin.qq.com/cgi-bin/menu/create?access_token={0}
+      menuGetUrl: https://api.weixin.qq.com/cgi-bin/menu/get?access_token={0}
+      menuDeleteUrl: https://api.weixin.qq.com/cgi-bin/menu/delete?access_token={0}
+      #用户分组
+      groupMemberUpdate: https://api.weixin.qq.com/cgi-bin/groups/members/update?access_token={0}
+      #获取用户列表
+      openIdListUrl: https://api.weixin.qq.com/cgi-bin/user/get?access_token={0}&next_openid={1}
+      batchUserInfoUrl: https://api.weixin.qq.com/cgi-bin/user/info/batchget?access_token={0}
+      #带参二维码
+      createQrCode: https://api.weixin.qq.com/cgi-bin/qrcode/create?access_token={0}
+      showQrCode: https://mp.weixin.qq.com/cgi-bin/showqrcode?ticket={0}
+      #jsApi
+      jsApiTicketUrl: https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token={0}&type=jsapi
+      #素材相关
+      addMaterialUrl: https://api.weixin.qq.com/cgi-bin/material/add_material?access_token={0}&type={1}
+      uploadMediaUrl: https://api.weixin.qq.com/cgi-bin/media/upload?access_token={0}&type={1}
+      getMediaUrl: https://api.weixin.qq.com/cgi-bin/media/get?access_token={0}&media_id={1}
+      #客服消息接口
+      messageSingleSendUrl: https://api.weixin.qq.com/cgi-bin/message/custom/send?access_token={0}
+      #获取在线客服列表
+      onlineKfList: https://api.weixin.qq.com/cgi-bin/customservice/getonlinekflist?access_token={0}
+      #获取未接入会话列表
+      waitCase: https://api.weixin.qq.com/customservice/kfsession/getwaitcase?access_token={0}
+
+
+
