@@ -23,3 +23,10 @@ ttsales:
 auth:
   duration: 1800000
   wxAuthCallback: http://localhost:8082/ttsales-points-wx-auth/wx/callback/getWxAuthCode.do?toUrl={0}
+
+sign:
+  location: /data/points-cert/apiclient_cert.p12
+  mchSerialNo: 5ED2A1824BFDB9A29C7C837F7F6CD04F02F686BD
+  key: b3cac8ff919d11e996836c92bf218c24
+  mchId: 1514184991
+  appid: wx383c71537436afe1
